@@ -14,8 +14,8 @@ export default function CatCard({
   return (
     <div className="rounded-lg shadow">
       <h1 className="font-bold text-2xl">{Title}</h1>
-      <p>{Content.slice(0, 100)}...</p>
-      <p>{Content ? Content.slice(0, 100) : `Loading..`}...</p>
+     <p>{Content ? Content.slice(0, 100) : `Loading..`}...</p>
+      <p>Created On: {calculation(CreatedOn)}</p>
       <p>Author: {Author}</p>
       <Image
         src={ImageUrl}
